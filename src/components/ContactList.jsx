@@ -7,9 +7,8 @@ const ContactList = (props) => {
     <div className='ui celled list'>
       <h2 style={{marginTop:'2rem'}}>Contact List</h2>
     {contacts.map((contact) => {
-        const {id, name, email} = contact
         return(
-            <ContactCard />
+            <ContactCard contact={contact}/>
         )
     })
     }
