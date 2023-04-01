@@ -6,7 +6,9 @@ import ContactList from './components/ContactList'
 
 const App = () => {
   return (
-    <div>hello world</div>
+    <div>
+      <Header />
+    </div>
   )
 }
 
