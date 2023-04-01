@@ -9,7 +9,8 @@ const App = () => {
   return (
     <div className='ui container'>
       <Header />
-      <AddContact contacts={contacts}/>
+      <AddContact />
+      <ContactList  contacts={contacts} />
     </div>
   )
 }
