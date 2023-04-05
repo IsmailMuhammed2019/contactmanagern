@@ -8,7 +8,7 @@ const ContactList = (props) => {
       <h2 style={{marginTop:'2rem'}}>Contact List</h2>
     {contacts.map((contact) => {
         return(
-            <ContactCard contact={contact}/>
+            <ContactCard contact={contact} key={contact.id}/>
         )
     })
     }
