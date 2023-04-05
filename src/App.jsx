@@ -32,7 +32,7 @@
 
 import React, { useEffect, useState } from 'react'
 import user from './assets/imgs/user.png'
-import {uuid} from ''
+
 
 
 const headerStyle ={
