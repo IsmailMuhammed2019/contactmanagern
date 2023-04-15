@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 
-const ContactList = () => {
+const ContactList = () => {  
+  const [people, setPeople] = useState([])
   return (
     <div>ContactList</div>
   )
