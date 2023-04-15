@@ -4,11 +4,12 @@ import ContactCard from './components/ContactCard'
 
 const App = () => {
   return (
+    <>
+    <Header />
     <main className='ui container'>
-        <Header />
         <ContactCard />
-
     </main>
+    </>
   )
 }
 
