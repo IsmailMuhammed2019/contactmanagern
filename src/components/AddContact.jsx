@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const AddContact = (handleSubmit) => {
+const AddContact = () => {
   const [person, setPerson] = useState({name: '', email: ''})
   
   const handleChange = (e) => {
@@ -11,7 +11,7 @@ const AddContact = (handleSubmit) => {
 
   return (
     <div className='ui main'>
-      <form className='ui form' onSubmit={handleSubmit}>
+      <form className='ui form'>
         <div className='field'>
         <label htmlFor="name">Name:</label>
         <input type="text" name='name' id='name' value={person.name} onChange={handleChange} />
