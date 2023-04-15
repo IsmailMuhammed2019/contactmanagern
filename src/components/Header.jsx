@@ -2,7 +2,11 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <header className='ui fix menu'>
+      <div className='ui container center'>
+        <h2>Contact Manager</h2>
+      </div>
+    </header>
   )
 }
 
