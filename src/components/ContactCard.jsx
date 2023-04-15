@@ -3,7 +3,7 @@ import AddContact from './AddContact'
 import ContactList from './ContactList'
 
 const ContactCard = () => {
-  const contact = [
+  const contacts = [
     {
       name: 'Ismail',
       email: 'ismail@gmail.com'
@@ -16,7 +16,7 @@ const ContactCard = () => {
   return (
     <div>
       <AddContact />
-      <ContactList />
+      <ContactList contacts={contacts} />
     </div>
   )
 }
