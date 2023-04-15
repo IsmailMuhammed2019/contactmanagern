@@ -5,10 +5,12 @@ import ContactList from './ContactList'
 const ContactCard = () => {
   const contacts = [
     {
+      id: 1,
       name: 'Ismail',
       email: 'ismail@gmail.com'
     },
     {
+      id: 2,
       name: 'Hawa',
       email: 'hawa@gmail.com'
     }
