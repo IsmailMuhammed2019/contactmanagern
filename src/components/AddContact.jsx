@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const AddContact = () => {
+  const [person, setPerson] = useState({name: '', email: ''})
   return (
     <div className='ui main'>
       <form className='ui form'>
