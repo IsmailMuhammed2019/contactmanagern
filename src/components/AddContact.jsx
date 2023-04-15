@@ -1,15 +1,13 @@
 import React, {useState} from 'react'
 
-const AddContact = () => {
+const AddContact = (handleSubmit) => {
   const [person, setPerson] = useState({name: '', email: ''})
   
   const handleChange = (e) => {
     setPerson(e.target.value)
   }
 
-  const handleSubmit = () => {
 
-  }
 
   return (
     <div className='ui main'>
