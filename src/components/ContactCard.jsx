@@ -1,26 +1,24 @@
-import React, {useState} from 'react'
-import AddContact from './AddContact'
-import ContactList from './ContactList'
+import React from 'react'
 
-const ContactCard = () => {
-  const contacts = [
-    {
-      id: 1,
-      name: 'Ismail',
-      email: 'ismail@gmail.com'
-    },
-    {
-      id: 2,
-      name: 'Hawa',
-      email: 'hawa@gmail.com'
-    }
-  ]
+
+const ContactCard = ({contacts}) => {
+  
   return (
     <div>
-      <AddContact />
-      <ContactList contacts={contacts} />
+      {contacts.map((contact) => {
+        const {id, name, email} = contact
+        return (
+          <div key={id} className='item'>
+            <div className='content'>
+            <div className='header'>{name}</div>
+            <div>{email}</div>
+            </div>
+            <i className='trash alternate red outline icon'></i>
+          </div>
+        )
+      })}
     </div>
   )
 }
 
-export default ContactCard
+export default ContactCard 
